@@ -1,0 +1,67 @@
+.promo {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color); 
+    padding-bottom: 60px;
+    &__content {
+        padding-top: 130px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        &__texts {
+            flex: 0 0 50%;
+            max-width: 50%;
+            h1 {
+                font-size: 52px;
+                font-weight: 400;
+                color: var(--color-primary);
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.5;
+                width: 80%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: var(--text-color); 
+            }
+            &__buttons {
+                button {
+                    white-space: nowrap;
+                    display: inline-block;
+                    padding: 8px 20px 9px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #2b3af7;
+                    background-color: #2b3af7;
+                    border-radius: 3px;
+                    font-weight: 500;
+                    color: var(--color-primary-text);
+                    text-decoration: none;
+                    transition: all .15s linear;
+                    outline: none;
+                    font-size: 16px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: none;
+                        transform: translateY(-1px);
+                        box-shadow: 0 7px 14px rgba(0, 0, 0, .1);
+                    }
+                }
+            }
+        }
+        &__picture {
+            flex: 0 0 50%;
+            max-width: 50%;
+            img {
+                z-index: 3;
+                position: relative;
+                max-width: 100%;
+                height: auto;
+                border-radius: .25rem;
+            }
+        }
+    }
+}

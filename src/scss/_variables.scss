@@ -1,0 +1,23 @@
+:root {
+    /* Default light theme */
+    --background-color: #ffff; /* Light background */
+    --text-color: #202020; /* Dark text for light background */
+    --primary-color: #2b3af7; /* Primary color that might be used throughout the UI */
+
+    /* Other colors */
+    --color-base: #ffffff;
+    --color-base-offset: #f2f2f2;
+    --color-base-text: #202020;
+    --color-base-text-offset: #413f3f;
+    --color-primary-offset: #371fda;
+    --color-primary-text: #ffffff;
+    --color-primary-text-offset: #e8ffff;
+}
+
+body.dark {
+    /* Override for dark theme */
+    --background-color: #121212; /* Dark background */
+    --text-color: #ffff; /* Light text for dark background */
+    --primary-color: #656ef2; /* It might remain the same or change based on your design */
+    --color-base-offset: #1e1e1e;
+}

@@ -1,0 +1,85 @@
+.features {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color); // Use theme background color
+    color: var(--text-color); 
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Center align the children
+        &__headertext {
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 26px;
+            color: var(--text-color);
+        }
+        &__sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; // Center align all sections
+            width: 100%;
+            &__section {
+                margin-bottom: 20px;
+                flex: 0 0 33.33333333%;
+                max-width: 33.33333333%;
+                padding-right: 10px; // Adjust padding instead of margin-right
+                padding-left: 10px; // Adjust padding if necessary
+                &__content {
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    height: 100%;
+                    border-radius: 5px;
+                    background-color: var( --color-base-offset); // Use base color
+                    border: 1px solid var(--color-base-offset);
+                    box-shadow: 0 3px 11px -3px rgba(0, 0, 0, .2);
+                    padding: 20px;
+                    h2 {
+                        font-size: 24px;
+                        line-height: 32px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                        color: var(--text-color); 
+                    }
+                    p {
+                        font-size: 15px;
+                        line-height: 24px;
+                        opacity: .8;
+                        margin: 0;
+                        width: 90%;
+                        padding-top: 0;
+                        color: var(--text-color); 
+                    }
+                }
+            }
+        }
+    }
+    &__hero {
+        min-height: 100%;
+        padding-top: 90px;
+        margin-top: 120px;
+        padding-bottom: 60px;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        border-top: 1px solid rgba(165, 165, 165, 0.592);
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            img {
+                z-index: 3;
+                position: relative;
+                max-width: 100%;
+                height: auto;
+                border-radius: .25rem;
+                box-shadow: 0 3px 11px rgba(0, 0, 0, .2);
+            }
+        }
+    }
+}

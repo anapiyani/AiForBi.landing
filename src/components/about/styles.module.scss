@@ -1,0 +1,70 @@
+.about {
+    background-color: var(--color-base-offset);
+    color: var(--text-color);
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        &__picture {
+            flex: 0 0 50%;
+            max-width: 50%;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: .25rem;
+                vertical-align: bottom;
+            }
+        }
+        &__texts {
+            flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 45px;
+            font-family: "Roboto", sans-serif;
+            h2 {
+                font-size: 34px;
+                line-height: 1.2;
+                font-weight: 400;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+            p {
+                width: 80%;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.7;
+            }
+            button {
+                white-space: nowrap;
+                display: inline-block;
+                padding: 8px 20px 9px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: var(--color-primary);
+                background-color: var(--color-primary);
+                border-radius: 3px;
+                font-weight: 500;
+                color: var(--color-primary-text);
+                text-decoration: none;
+                transition: all .15s linear;
+                outline: none;
+                font-size: 16px;
+                background-color: var(--color-primary); // Dynamic color
+                color: var(--text-color); // Dynamic color
+                border-color: var(--color-primary); // Dynamic color
+                cursor: pointer;
+                margin-top: 20px;
+                &:hover {
+                    text-decoration: none;
+                    transform: translateY(-1px);
+                    box-shadow: 0 7px 14px rgba(0, 0, 0, .1);
+                }
+            }
+        }
+    }
+}
