@@ -3,7 +3,6 @@ import Features from "./components/features/features";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header.component";
 import Promo from "./components/promo/promo";
-import Strip from "./components/strip/strip";
 import { ThemeProvider } from "./ThemeContext";
 
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
         <Promo />
         <About />
         <Features />
-        <Strip />
         <Footer />
       </div>
     </ThemeProvider>

@@ -14,7 +14,7 @@
             img {
                 width: 100%;
                 height: auto;
-                border-radius: .25rem;
+                border-radius: 0.25rem;
                 vertical-align: bottom;
             }
         }
@@ -34,7 +34,6 @@
                 width: 80%;
             }
             p {
-                width: 80%;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 1.7;
@@ -51,7 +50,7 @@
                 font-weight: 500;
                 color: var(--color-primary-text);
                 text-decoration: none;
-                transition: all .15s linear;
+                transition: all 0.15s linear;
                 outline: none;
                 font-size: 16px;
                 background-color: var(--color-primary); // Dynamic color
@@ -62,7 +61,7 @@
                 &:hover {
                     text-decoration: none;
                     transform: translateY(-1px);
-                    box-shadow: 0 7px 14px rgba(0, 0, 0, .1);
+                    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
                 }
             }
         }

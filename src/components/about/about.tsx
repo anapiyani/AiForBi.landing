@@ -1,4 +1,4 @@
-import phones from "../../assets/phones.jpg";
+import phones from "../../assets/phone.jpeg";
 import classes from "./styles.module.scss";
 
 const About = () => {
@@ -10,13 +10,25 @@ const About = () => {
             <img src={phones} alt="AI" />
           </div>
           <div className={classes["about__content__texts"]}>
-            <h2>Repeat, reorder and insert sections anywhere</h2>
+            <h2>
+              Взаимодействие продукта (с другими продуктами и компонентами)
+            </h2>
             <p>
-              Use info sections to place configurable image, text and button
-              blocks. Alternate image alignment or hide the image altogether, it
-              still looks great.
+              Бот будет взаимодействовать с: <br />
+              - Microsoft Teams для управления тендером и взаимодействия с
+              пользователями.
+              <br />
+              - OpenAI GPT-4 для генерации текста.
+              <br />
+              - API для распознавания речи и синтеза речи.
+              <br />
+              - Бэкэндом для хранения данных и управления состояниями.
+              <br />
+              - СУБД компании для подтягивания протокола тендера перед каждым
+              тендером.
+              <br />
             </p>
-            <button>Try Demo</button>
+            <button>Демо</button>
           </div>
         </div>
       </div>

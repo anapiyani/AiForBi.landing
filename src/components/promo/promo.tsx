@@ -1,25 +1,29 @@
 import classes from "./styles.module.scss";
-import mac from "../../assets/mac.jpg";
+import doc from "../../assets/AiForBi.pdf";
 
 const Promo = () => {
   return (
-    <div className={classes["promo"]}>
+    <div id="about" className={classes["promo"]}>
       <div className="container">
         <div className={classes["promo__content"]}>
           <div className={classes["promo__content__texts"]}>
             <h1>AI FOR BI</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus at eos odio tempore quas dolore recusandae, laudantium
-              illo placeat atque dicta nesciunt reiciendis. Vel, cupiditate!
+              Цель данного проекта – разработка бота Microsoft Teams,
+              предназначенного для автоматизации процесса проведения тендеров в
+              строительной компании. Бот будет взаимодействовать с участниками
+              тендера и проектной командой, управляя процессом от начала до
+              конца, обеспечивая его гладкое, эффективное и профессиональное
+              проведение.
             </p>
             <div className={classes["promo__content__texts__buttons"]}>
-              <button>Try demo</button>
-              <button>Documentation</button>
+              <a href="#">
+                <button>Демо</button>
+              </a>
+              <a href={doc}>
+                <button>Техническое задание</button>
+              </a>
             </div>
-          </div>
-          <div className={classes["promo__content__picture"]}>
-            <img src={mac} alt="mac" />
           </div>
         </div>
       </div>

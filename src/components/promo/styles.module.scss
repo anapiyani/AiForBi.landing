@@ -6,13 +6,13 @@
     padding-bottom: 60px;
     &__content {
         padding-top: 130px;
-        display: flex;
-        flex-wrap: wrap;
         margin-right: -15px;
         margin-left: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &__texts {
-            flex: 0 0 50%;
-            max-width: 50%;
+            text-align: center;
             h1 {
                 font-size: 52px;
                 font-weight: 400;
@@ -21,7 +21,6 @@
             p {
                 font-size: 20px;
                 line-height: 1.5;
-                width: 80%;
                 margin-top: 20px;
                 margin-bottom: 20px;
                 color: var(--text-color); 
@@ -50,17 +49,6 @@
                         box-shadow: 0 7px 14px rgba(0, 0, 0, .1);
                     }
                 }
-            }
-        }
-        &__picture {
-            flex: 0 0 50%;
-            max-width: 50%;
-            img {
-                z-index: 3;
-                position: relative;
-                max-width: 100%;
-                height: auto;
-                border-radius: .25rem;
             }
         }
     }

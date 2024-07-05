@@ -8,8 +8,12 @@ const Footer = () => {
           <div className={classes["footer__content__texts"]}>
             <p>AI FOR BI</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              quod.
+              <a href="#">Документация Microsoft Teams SDK</a> <br />
+              <a href="#">Документация OpenAI GPT-4 API</a>
+              <br />
+              <a href="#">
+                Документация API для распознавания речи и синтеза речи
+              </a>
             </p>
             <p>© 2017 - 2024 Privacy policy Manage cookies </p>
           </div>

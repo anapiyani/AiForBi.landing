@@ -21,13 +21,13 @@ const Header = () => {
           <nav className={classes.header__content__nav}>
             <ul>
               <li>
-                <a href="#">ABOUT AI</a>
+                <a href="#about">Цель проекта</a>
               </li>
               <li>
-                <a href="#">FEATURES</a>
+                <a href="#feat">FEATURES</a>
               </li>
               <li>
-                <a href="#">MORE</a>
+                <a href="#more">MORE</a>
               </li>
             </ul>
             <label className={classes.header__content__nav__switch}>
