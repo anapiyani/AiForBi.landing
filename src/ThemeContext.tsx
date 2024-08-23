@@ -1,18 +1,11 @@
-// context/ThemeContext.tsx
-import React, {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-  ReactNode,
-} from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 interface ThemeContextType {
   theme: string;
   toggleTheme: () => void;
 }
 
-const defaultState = {
+const defaultState: ThemeContextType = {
   theme: "light",
   toggleTheme: () => {},
 };
@@ -31,12 +24,10 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   );
 
   const toggleTheme = () => {
-    console.log("Toggling theme from", theme); // Debugging
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   useEffect(() => {
-    console.log("Setting class to", theme); // Debugging
     localStorage.setItem("theme", theme);
     document.body.className = theme;
   }, [theme]);
